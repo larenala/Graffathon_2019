@@ -7,6 +7,8 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
+Moonlander moonlander;
+
 int rad = 60;        // Width of the shape
 float xpos, ypos;    // Starting position of shape    
 
@@ -19,6 +21,7 @@ int ydirection = 1;  // Top to Bottom
 
 void setup() 
 {
+  moonlander = Moonlander.initWithSoundtrack(this, "Sokolovsky Leo - Funk.mp3", 127, 8);
   size(640, 360);
   noStroke();
   frameRate(30);
@@ -26,6 +29,7 @@ void setup()
   // Set the starting position of the shape
   xpos = width/2;
   ypos = height/2;
+  moonlander.start();
 }
 
 void draw() 
