@@ -21,7 +21,7 @@ int ydirection = 1;  // Top to Bottom
 
 void setup() 
 {
-  moonlander = Moonlander.initWithSoundtrack(this, "Sokolovsky Leo - Funk.mp3", 127, 8);
+  moonlander = Moonlander.initWithSoundtrack(this, "Sokolovsky_Leo_Funk.mp3", 110, 8);
   size(640, 360);
   noStroke();
   frameRate(30);
@@ -35,7 +35,7 @@ void setup()
 void draw() 
 {
   background(102);
-  
+  moonlander.update();
   // Update the position of the shape
   xpos = xpos + ( xspeed * xdirection );
   ypos = ypos + ( yspeed * ydirection );
