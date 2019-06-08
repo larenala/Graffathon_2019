@@ -19,6 +19,8 @@ int xdirection = 1;  // Left or Right
 int ydirection = 1;  // Top to Bottom
 
 PFont f;
+float angle;
+float offset = -100;
 
 void setup() 
 {
@@ -82,13 +84,18 @@ void drawScene1() {
 
 
 void write() {
- textAlign(CENTER);
- float c = cos(ane);
-  translate(width/2, height/2);
+  background(230, 100, 230);
+  textAlign(CENTER);
+ if (second() % 2 == 0) {  
+   background(230, 200, 130);
+    offset += 20;
+  } 
+  angle = angle + offset;
+  float c = angle;
+  translate(0, 0);
   rotate(c);
  text("FUNK", 0, 0);
  fill(51);
- 
 }
 
 
