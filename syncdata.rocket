@@ -22,6 +22,10 @@
 			<key row="42" value="0" interpolation="0"/>
 			<key row="50" value="0" interpolation="3"/>
 			<key row="58" value="0" interpolation="0"/>
+			<key row="264" value="-300" interpolation="0"/>
+			<key row="266" value="0" interpolation="0"/>
+			<key row="269" value="300" interpolation="0"/>
+			<key row="328" value="0" interpolation="0"/>
 		</track>
 		<track name="ypos">
 			<key row="18" value="0" interpolation="2"/>
@@ -31,6 +35,10 @@
 			<key row="30" value="0" interpolation="0"/>
 			<key row="34" value="0" interpolation="2"/>
 			<key row="42" value="0" interpolation="0"/>
+			<key row="264" value="200" interpolation="0"/>
+			<key row="266" value="200" interpolation="0"/>
+			<key row="269" value="200" interpolation="0"/>
+			<key row="328" value="0" interpolation="0"/>
 		</track>
 		<track name="scene">
 			<key row="18" value="0" interpolation="0"/>
@@ -45,8 +53,10 @@
 			<key row="184" value="7" interpolation="0"/>
 			<key row="200" value="8" interpolation="0"/>
 			<key row="216" value="9" interpolation="0"/>
-			<key row="262" value="5" interpolation="0"/>
+			<key row="232" value="4" interpolation="0"/>
+			<key row="264" value="3" interpolation="0"/>
 			<key row="302" value="6" interpolation="0"/>
+			<key row="328" value="5" interpolation="0"/>
 		</track>
 		<track name="circWidth">
 			<key row="18" value="0" interpolation="2"/>
@@ -57,14 +67,14 @@
 			<key row="28" value="400" interpolation="3"/>
 			<key row="29" value="500" interpolation="0"/>
 			<key row="33" value="800" interpolation="0"/>
-			<key row="262" value="800" interpolation="0"/>
-			<key row="268" value="500" interpolation="0"/>
-			<key row="271" value="400" interpolation="0"/>
-			<key row="274" value="200" interpolation="0"/>
-			<key row="277" value="100" interpolation="0"/>
-			<key row="280" value="50" interpolation="0"/>
-			<key row="282" value="20" interpolation="0"/>
-			<key row="285" value="10" interpolation="0"/>
+			<key row="328" value="800" interpolation="0"/>
+			<key row="334" value="500" interpolation="0"/>
+			<key row="337" value="400" interpolation="0"/>
+			<key row="340" value="200" interpolation="0"/>
+			<key row="343" value="100" interpolation="0"/>
+			<key row="346" value="50" interpolation="0"/>
+			<key row="348" value="20" interpolation="0"/>
+			<key row="351" value="10" interpolation="0"/>
 		</track>
 		<track name="circHeight">
 			<key row="18" value="0" interpolation="2"/>
@@ -75,14 +85,14 @@
 			<key row="28" value="400" interpolation="3"/>
 			<key row="29" value="500" interpolation="0"/>
 			<key row="33" value="800" interpolation="0"/>
-			<key row="262" value="800" interpolation="0"/>
-			<key row="268" value="500" interpolation="0"/>
-			<key row="271" value="400" interpolation="0"/>
-			<key row="274" value="200" interpolation="0"/>
-			<key row="277" value="100" interpolation="0"/>
-			<key row="280" value="50" interpolation="0"/>
-			<key row="282" value="20" interpolation="0"/>
-			<key row="285" value="10" interpolation="0"/>
+			<key row="328" value="800" interpolation="0"/>
+			<key row="334" value="500" interpolation="0"/>
+			<key row="337" value="400" interpolation="0"/>
+			<key row="340" value="200" interpolation="0"/>
+			<key row="343" value="100" interpolation="0"/>
+			<key row="346" value="50" interpolation="0"/>
+			<key row="348" value="20" interpolation="0"/>
+			<key row="351" value="10" interpolation="0"/>
 		</track>
 	</tracks>
 	<bookmarks/>
