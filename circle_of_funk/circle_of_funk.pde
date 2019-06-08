@@ -163,17 +163,11 @@ void drawScene6() {
 }
 
 void drawScene7() {
- int counter = 0;
-  
-  background(0);
+  float time = (float) moonlander.getCurrentTime();
   float xpos = (float) moonlander.getValue("xpos");
   float ypos = (float) moonlander.getValue("ypos");
-  background(0);
-  circle(xpos, ypos, 400);
-  fill(255, 0, 150,255);
   float circHeight = (float) moonlander.getValue("circHeight");
     background(0);
-    
     circle(xpos, ypos, circHeight);
     fill(255, 0, 150,255);
 

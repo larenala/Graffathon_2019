@@ -67,6 +67,14 @@
 			<key row="64" value="400" interpolation="2"/>
 			<key row="66" value="500" interpolation="2"/>
 			<key row="70" value="800" interpolation="0"/>
+			<key row="120" value="400" interpolation="1"/>
+			<key row="136" value="200" interpolation="1"/>
+			<key row="152" value="0" interpolation="1"/>
+			<key row="168" value="200" interpolation="1"/>
+			<key row="184" value="400" interpolation="1"/>
+			<key row="200" value="600" interpolation="1"/>
+			<key row="216" value="800" interpolation="1"/>
+			<key row="232" value="1000" interpolation="0"/>
 			<key row="336" value="800" interpolation="0"/>
 			<key row="342" value="500" interpolation="0"/>
 			<key row="345" value="400" interpolation="0"/>
@@ -126,14 +134,6 @@
 			<key row="64" value="400" interpolation="2"/>
 			<key row="66" value="500" interpolation="2"/>
 			<key row="70" value="800" interpolation="0"/>
-			<key row="120" value="400" interpolation="1"/>
-			<key row="136" value="200" interpolation="1"/>
-			<key row="152" value="0" interpolation="1"/>
-			<key row="168" value="200" interpolation="1"/>
-			<key row="184" value="400" interpolation="1"/>
-			<key row="200" value="600" interpolation="1"/>
-			<key row="216" value="800" interpolation="1"/>
-			<key row="232" value="1000" interpolation="0"/>
 			<key row="336" value="800" interpolation="0"/>
 			<key row="342" value="500" interpolation="0"/>
 			<key row="345" value="400" interpolation="0"/>
