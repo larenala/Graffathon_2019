@@ -84,7 +84,6 @@ void drawScene1() {
 
 
 void write() {
-<<<<<<< HEAD
   background(230, 100, 230);
   textAlign(CENTER);
  if (second() % 2 == 0) {  
@@ -95,9 +94,7 @@ void write() {
   float c = angle;
   translate(0, 0);
   rotate(c);
-=======
  textAlign(CENTER);
->>>>>>> 746a9da6d9210585d10054b8e40495da06300384
  text("FUNK", 0, 0);
  fill(51);
 }
