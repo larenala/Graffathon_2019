@@ -57,6 +57,7 @@ void draw()
   // Draw the shape
   ellipse(xpos, ypos, rad, rad);
   
+  int scene = moonlander.getIntValue("scene");
   
   if(scene == 0){
     drawScene0();
