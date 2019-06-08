@@ -32,6 +32,7 @@ void setup()
   printArray(PFont.list());
   f = createFont("BungeeShade-Regular.ttf", 224);
   textFont(f);
+  textAlign(CENTER, CENTER);
   // Set the starting position of the shape
   moonlander.start();
 }
@@ -99,7 +100,13 @@ void write() {
  fill(51);
 }
 
+
 void drawScene7() {
+
+  
+  int counter = 0;
+  
+  background(0);
   float xpos = (float) moonlander.getValue("xpos");
   float ypos = (float) moonlander.getValue("ypos");
   float time = (float) moonlander.getCurrentTime();
@@ -119,6 +126,26 @@ void drawScene8() {
   fill(255, 0, 150,255);
 }
 
+void drawScene6() {
+  float xpos = (float) moonlander.getValue("xpos");
+  float ypos = (float) moonlander.getValue("ypos"); 
+  float circWidth = (float) moonlander.getIntValue("circWidth");
+  float circHeight = (float) moonlander.getIntValue("circHeight");
+}
+
+void drawLastScene() {
+  background(255);
+  float xpos = (float) moonlander.getValue("xpos");
+  float ypos = (float) moonlander.getValue("ypos"); 
+  float circWidth = (float) moonlander.getIntValue("circWidth");
+  float circHeight = (float) moonlander.getIntValue("circHeight");
+  ellipse(xpos, ypos, circWidth,circHeight);
+  fill(230, 100, 230, 30);
+  ellipse(xpos-500, ypos, circWidth,circHeight);
+  fill(230, 200, 130, 127);
+  ellipse(xpos+500, ypos, circWidth,circHeight);
+  fill(230, 100, 130, 30);
+}
 
 void draw() {
   background(102);
@@ -143,11 +170,22 @@ void draw() {
     drawScene1();
   } else if(scene == 2) {
     write();
+<<<<<<< HEAD
   } else if(scene == 7) {
     drawScene7();
   } else if (scene ==8) {
     drawScene8();
 } else if (scene > 9){
+=======
+  } else if(scene == 3) {
+    drawScene3();
+  
+} else if (scene == 5) {
+  drawLastScene();
+} else if (scene == 6) {
+  drawScene6();
+} else if (scene > 6){
+>>>>>>> 82029510e625ee349e88272fb9a102b2bdc6aa70
     exit();
   }else{
    println("Unknown scene number: "+scene); 
