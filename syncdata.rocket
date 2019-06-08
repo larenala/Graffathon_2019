@@ -12,23 +12,50 @@
 			<key interpolation="0" row="20" value="0"/>
 		</track>
 		<track name="xpos">
-			<key interpolation="2" row="0" value="-1000"/>
-			<key interpolation="1" row="8" value="300"/>
-			<key interpolation="1" row="16" value="400"/>
-			<key interpolation="0" row="24" value="500"/>
-			<key interpolation="3" row="32" value="100"/>
-			<key interpolation="0" row="40" value="500"/>
+			<key interpolation="2" row="0" value="0"/>
+			<key interpolation="2" row="2" value="0"/>
+			<key interpolation="2" row="4" value="0"/>
+			<key interpolation="2" row="5" value="0"/>
+			<key interpolation="2" row="8" value="0"/>
+			<key interpolation="0" row="12" value="0"/>
+			<key interpolation="1" row="16" value="0"/>
+			<key interpolation="0" row="24" value="0"/>
+			<key interpolation="3" row="32" value="0"/>
+			<key interpolation="0" row="40" value="0"/>
 		</track>
 		<track name="ypos">
 			<key interpolation="2" row="0" value="0"/>
+			<key interpolation="0" row="2" value="0"/>
+			<key interpolation="0" row="4" value="0"/>
 			<key interpolation="2" row="8" value="0"/>
-			<key interpolation="2" row="16" value="400"/>
-			<key interpolation="0" row="24" value="450"/>
+			<key interpolation="0" row="12" value="0"/>
+			<key interpolation="2" row="16" value="0"/>
+			<key interpolation="0" row="24" value="0"/>
 		</track>
 		<track name="scene">
 			<key interpolation="0" row="0" value="0"/>
+			<key interpolation="0" row="12" value="0"/>
+			<key interpolation="0" row="16" value="1"/>
 			<key interpolation="0" row="48" value="1"/>
 			<key interpolation="0" row="120" value="6"/>
+		</track>
+		<track name="circWidth">
+			<key interpolation="2" row="0" value="0"/>
+			<key interpolation="1" row="2" value="10"/>
+			<key interpolation="2" row="4" value="50"/>
+			<key interpolation="2" row="6" value="100"/>
+			<key interpolation="2" row="8" value="200"/>
+			<key interpolation="3" row="10" value="300"/>
+			<key interpolation="0" row="11" value="290"/>
+		</track>
+		<track name="circHeight">
+			<key interpolation="2" row="0" value="0"/>
+			<key interpolation="1" row="2" value="10"/>
+			<key interpolation="2" row="4" value="50"/>
+			<key interpolation="2" row="6" value="100"/>
+			<key interpolation="2" row="8" value="200"/>
+			<key interpolation="3" row="10" value="300"/>
+			<key interpolation="0" row="11" value="290"/>
 		</track>
 	</tracks>
 	<bookmarks/>
