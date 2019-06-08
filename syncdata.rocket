@@ -52,24 +52,17 @@
 			<key row="168" value="8" interpolation="0"/>
 			<key row="184" value="7" interpolation="0"/>
 			<key row="200" value="8" interpolation="0"/>
-<<<<<<< HEAD
 			<key row="216" value="9" interpolation="0"/>
 			<key row="232" value="4" interpolation="0"/>
 			<key row="264" value="3" interpolation="0"/>
 			<key row="302" value="6" interpolation="0"/>
 			<key row="328" value="5" interpolation="0"/>
-=======
-			<key row="216" value="7" interpolation="0"/>
-			<key row="232" value="9" interpolation="0"/>
-			<key row="272" value="5" interpolation="0"/>
-			<key row="344" value="6" interpolation="0"/>
 		</track>
 		<track name="rectHeight">
 			<key row="240" value="100" interpolation="0"/>
 			<key row="248" value="200" interpolation="0"/>
 			<key row="256" value="300" interpolation="0"/>
 			<key row="264" value="400" interpolation="0"/>
->>>>>>> c14a5e048a6f502ec1d22131c220a3799875fe2e
 		</track>
 		<track name="circWidth">
 			<key row="18" value="0" interpolation="2"/>
@@ -80,16 +73,7 @@
 			<key row="28" value="400" interpolation="3"/>
 			<key row="29" value="500" interpolation="0"/>
 			<key row="33" value="800" interpolation="0"/>
-<<<<<<< HEAD
-			<key row="328" value="800" interpolation="0"/>
-			<key row="334" value="500" interpolation="0"/>
-			<key row="337" value="400" interpolation="0"/>
-			<key row="340" value="200" interpolation="0"/>
-			<key row="343" value="100" interpolation="0"/>
-			<key row="346" value="50" interpolation="0"/>
-			<key row="348" value="20" interpolation="0"/>
-			<key row="351" value="10" interpolation="0"/>
-=======
+
 			<key row="280" value="800" interpolation="0"/>
 			<key row="286" value="500" interpolation="0"/>
 			<key row="289" value="400" interpolation="0"/>
@@ -98,7 +82,6 @@
 			<key row="298" value="50" interpolation="0"/>
 			<key row="300" value="20" interpolation="0"/>
 			<key row="303" value="10" interpolation="0"/>
->>>>>>> c14a5e048a6f502ec1d22131c220a3799875fe2e
 		</track>
 		<track name="circHeight">
 			<key row="18" value="0" interpolation="2"/>
@@ -109,16 +92,7 @@
 			<key row="28" value="400" interpolation="3"/>
 			<key row="29" value="500" interpolation="0"/>
 			<key row="33" value="800" interpolation="0"/>
-<<<<<<< HEAD
-			<key row="328" value="800" interpolation="0"/>
-			<key row="334" value="500" interpolation="0"/>
-			<key row="337" value="400" interpolation="0"/>
-			<key row="340" value="200" interpolation="0"/>
-			<key row="343" value="100" interpolation="0"/>
-			<key row="346" value="50" interpolation="0"/>
-			<key row="348" value="20" interpolation="0"/>
-			<key row="351" value="10" interpolation="0"/>
-=======
+
 			<key row="120" value="400" interpolation="1"/>
 			<key row="136" value="200" interpolation="1"/>
 			<key row="152" value="0" interpolation="1"/>
@@ -147,7 +121,7 @@
 			<key row="248" value="200" interpolation="0"/>
 			<key row="256" value="300" interpolation="0"/>
 			<key row="264" value="400" interpolation="0"/>
->>>>>>> c14a5e048a6f502ec1d22131c220a3799875fe2e
+
 		</track>
 	</tracks>
 	<bookmarks/>
