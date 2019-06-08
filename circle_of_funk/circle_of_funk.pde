@@ -129,10 +129,20 @@ void drawScene3() {
 }
 
 void drawScene6() {
-  float xpos = (float) moonlander.getValue("xpos");
-  float ypos = (float) moonlander.getValue("ypos"); 
-  float circWidth = (float) moonlander.getIntValue("circWidth");
-  float circHeight = (float) moonlander.getIntValue("circHeight");
+ background(255);
+  
+  float time = (float) moonlander.getCurrentTime();
+  float beats = time * (110.0 / 60.0);
+  int beat = int(beats)-160;
+  int counter = 0;
+  for(int i=0;i<=10;i++){
+   float x = map(i, 0, 10, -640, 320);
+     ellipse(x,0, 60, 60);
+     counter++;
+     if(counter > beat){
+       return;
+     }
+  }
 }
 
 void drawLastScene() {
