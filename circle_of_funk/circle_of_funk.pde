@@ -32,6 +32,39 @@ void setup()
   moonlander.start();
 }
 
+void drawScene0() {
+  xpos = (float) moonlander.getValue("xpos");
+  ypos = (float) moonlander.getValue("ypos");
+  
+  if (xpos > width-rad || xpos < rad) {
+    xdirection *= -1;
+  }
+  if (ypos > height-rad || ypos < rad) {
+    ydirection *= -1;
+  }
+
+  // Draw the shape
+  ellipse(xpos, ypos, rad, rad);
+}
+
+void drawScene1() {
+  background(0);
+  
+  float time = (float) moonlander.getCurrentTime();
+  float beats = time * (110.0 / 60.0);
+  int beat = int(beats);
+  int counter = 0;
+  for(int i=0;i<=20;i++){
+    //looks good, but 10->20 error :D
+   float x = map(i, 0, 10, -640, 320);
+     ellipse(x,0, 60, 60);
+     counter++;
+     if(counter > beat){
+       return;
+     }
+  }  
+}
+
 void draw() 
 {
   background(102);
@@ -43,35 +76,18 @@ void draw()
   // Update the position of the shape
   //xpos = xpos + ( xspeed * xdirection );
   //ypos = ypos + ( yspeed * ydirection );
-  xpos = (float) moonlander.getValue("xpos");
-  ypos = (float) moonlander.getValue("ypos");
+  
   // Test to see if the shape exceeds the boundaries of the screen
   // If it does, reverse its direction by multiplying by -1
-  if (xpos > width-rad || xpos < rad) {
-    xdirection *= -1;
-  }
-  if (ypos > height-rad || ypos < rad) {
-    ydirection *= -1;
-  }
-
-  // Draw the shape
-  ellipse(xpos, ypos, rad, rad);
+  
   
   int scene = moonlander.getIntValue("scene");
   
-  if(scene == 0){
+ if (scene == 0){
     drawScene0();
-  }else if(scene == 1){
+ } else if(scene == 1){
     drawScene1();
-  }else if(scene == 2){
-    drawScene2();
-  }else if(scene == 3){
-    drawScene3(); 
-  }else if(scene == 4){
-    drawScene4();
-  }else if(scene == 5){  
-    drawScene5();
-  }else if(scene > 5){
+  } else if(scene > 5){
     exit();
   }else{
    println("Unknown scene number: "+scene); 
@@ -81,4 +97,3 @@ void draw()
 }
   
   
-}
