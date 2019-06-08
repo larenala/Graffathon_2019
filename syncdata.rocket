@@ -25,6 +25,11 @@
 			<key interpolation="2" row="16" value="400"/>
 			<key interpolation="0" row="24" value="450"/>
 		</track>
+		<track name="scene">
+			<key interpolation="0" row="0" value="0"/>
+			<key interpolation="0" row="48" value="1"/>
+			<key interpolation="0" row="120" value="6"/>
+		</track>
 	</tracks>
 	<bookmarks/>
 </sync>

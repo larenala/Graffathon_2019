@@ -18,6 +18,7 @@ float yspeed = 2.2;  // Speed of the shape
 int xdirection = 1;  // Left or Right
 int ydirection = 1;  // Top to Bottom
 
+float initTimeScene1=0;
 
 void setup() 
 {
