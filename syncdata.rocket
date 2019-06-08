@@ -35,7 +35,8 @@
 		<track name="scene">
 			<key interpolation="0" row="0" value="0"/>
 			<key interpolation="0" row="12" value="0"/>
-			<key interpolation="0" row="16" value="1"/>
+			<key interpolation="0" row="16" value="0"/>
+			<key interpolation="0" row="18" value="2"/>
 			<key interpolation="0" row="48" value="1"/>
 			<key interpolation="0" row="120" value="6"/>
 		</track>
@@ -45,8 +46,9 @@
 			<key interpolation="2" row="4" value="50"/>
 			<key interpolation="2" row="6" value="100"/>
 			<key interpolation="2" row="8" value="200"/>
-			<key interpolation="3" row="10" value="300"/>
-			<key interpolation="0" row="11" value="290"/>
+			<key interpolation="3" row="10" value="400"/>
+			<key interpolation="0" row="11" value="500"/>
+			<key interpolation="0" row="15" value="800"/>
 		</track>
 		<track name="circHeight">
 			<key interpolation="2" row="0" value="0"/>
@@ -54,8 +56,9 @@
 			<key interpolation="2" row="4" value="50"/>
 			<key interpolation="2" row="6" value="100"/>
 			<key interpolation="2" row="8" value="200"/>
-			<key interpolation="3" row="10" value="300"/>
-			<key interpolation="0" row="11" value="290"/>
+			<key interpolation="3" row="10" value="400"/>
+			<key interpolation="0" row="11" value="500"/>
+			<key interpolation="0" row="15" value="800"/>
 		</track>
 	</tracks>
 	<bookmarks/>
