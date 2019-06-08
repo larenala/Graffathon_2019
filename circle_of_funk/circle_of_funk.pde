@@ -36,10 +36,14 @@ void draw()
 {
   background(102);
   moonlander.update();
+  float time = (float) moonlander.getCurrentTime();
+  translate(width/2, height/2);
+  scale(height/1000.0);
   // Update the position of the shape
-  xpos = xpos + ( xspeed * xdirection );
-  ypos = ypos + ( yspeed * ydirection );
-  
+  //xpos = xpos + ( xspeed * xdirection );
+  //ypos = ypos + ( yspeed * ydirection );
+  xpos = (float) moonlander.getValue("xpos");
+  ypos = (float) moonlander.getValue("ypos");
   // Test to see if the shape exceeds the boundaries of the screen
   // If it does, reverse its direction by multiplying by -1
   if (xpos > width-rad || xpos < rad) {
