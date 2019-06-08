@@ -127,23 +127,11 @@ void drawScene8() {
 }
 
 void drawScene9() {
-
-int cols = width*2;
-int rows = height*2;
-
-int[][] myArray = new int[cols][rows];
-
-for (int i = 0; i < cols; i++) {
-  for (int j = 0; j < rows; j++) {
-    myArray[i][j] = int(random(255));
-  }
-}
-for (int i = 0; i < cols; i++) {
-  for (int j = 0; j < rows; j++) {
-    stroke(myArray[i][j]);
-    point(i,j);
-  }
-}
+  background(0);
+  rectMode(CENTER);
+  rect(0,0,200,200);
+  fill(255);
+  
 }
 
 void drawScene6() {
