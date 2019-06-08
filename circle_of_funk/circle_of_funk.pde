@@ -148,7 +148,6 @@ void drawScene2() {
 
 void drawScene6() {
  background(255);
-  
   float time = (float) moonlander.getCurrentTime();
   float beats = time * (110.0 / 60.0);
   int beat = int(beats)-160;
@@ -164,6 +163,7 @@ void drawScene6() {
 }
 
 void drawScene7() {
+ int counter = 0;
   
   background(0);
   float xpos = (float) moonlander.getValue("xpos");
@@ -171,24 +171,35 @@ void drawScene7() {
   background(0);
   circle(xpos, ypos, 400);
   fill(255, 0, 150,255);
+  float circHeight = (float) moonlander.getValue("circHeight");
+    background(0);
+    
+    circle(xpos, ypos, circHeight);
+    fill(255, 0, 150,255);
+
 }
 
 void drawScene8() {
   float xpos = (float) moonlander.getValue("xpos");
   float ypos = (float) moonlander.getValue("ypos");
+  float circHeight = (float) moonlander.getValue("circHeight");
   background(255);
-  circle(xpos, ypos, 400);
+  circle(xpos, ypos, circHeight);
   fill(255, 0, 150,255);
 }
 
 void drawScene9() {
   background(0);
+  float rectWidth = (float) moonlander.getIntValue("rectWidth");
+  float rectHeight = (float) moonlander.getIntValue("rectHeight");
   rectMode(CENTER);
-  rect(0,0,200,200);
-  fill(255); 
+  float rotation = (float) moonlander.getIntValue("rotation");
+  rotate(PI/rotation);
+  rect(0,0,rectWidth,rectHeight);
+  fill(255);
+  
 }
-
-
+ 
 
 void drawLastScene() {
   background(255);
