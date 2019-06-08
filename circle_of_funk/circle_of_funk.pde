@@ -39,6 +39,7 @@ void draw()
   float time = (float) moonlander.getCurrentTime();
   translate(width/2, height/2);
   scale(height/1000.0);
+  
   // Update the position of the shape
   //xpos = xpos + ( xspeed * xdirection );
   //ypos = ypos + ( yspeed * ydirection );
