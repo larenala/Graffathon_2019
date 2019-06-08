@@ -99,33 +99,24 @@ void write() {
  fill(51);
 }
 
-
-void drawScene3() {
-  
-  int counter = 0;
-  
-  background(0);
+void drawScene7() {
   float xpos = (float) moonlander.getValue("xpos");
   float ypos = (float) moonlander.getValue("ypos");
   float time = (float) moonlander.getCurrentTime();
-  float beats = time * (110.0 / 60.0);
-  int beat = int(beats);
-  
-      circle(xpos, ypos, 400);
-    fill(255, 0, 150,100);
-  
-  
-  for (int i=0;i<=10;i++) {
+  float beats = time * (140/60);
+    background(0);
+    circle(xpos, ypos, 400);
+    fill(255, 0, 150,255);
+}
 
-    if (i%2==0) {
-      background(255);
-    } else {
-      background(0); 
-  }
-  if (counter > beat) {
-    return;
-  }
-  }
+void drawScene8() {
+  float xpos = (float) moonlander.getValue("xpos");
+  float ypos = (float) moonlander.getValue("ypos");
+  float time = (float) moonlander.getCurrentTime();
+  float beats = time * (140/60);
+  background(255);
+  circle(xpos, ypos, 400);
+  fill(255, 0, 150,255);
 }
 
 
@@ -152,10 +143,11 @@ void draw() {
     drawScene1();
   } else if(scene == 2) {
     write();
-  } else if(scene == 3) {
-    drawScene3();
-  
-} else if (scene > 5){
+  } else if(scene == 7) {
+    drawScene7();
+  } else if (scene ==8) {
+    drawScene8();
+} else if (scene > 9){
     exit();
   }else{
    println("Unknown scene number: "+scene); 

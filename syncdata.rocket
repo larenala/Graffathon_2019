@@ -38,8 +38,6 @@
 			<key row="16" value="0" interpolation="0"/>
 			<key row="18" value="2" interpolation="0"/>
 			<key row="48" value="1" interpolation="0"/>
-			<key row="96" value="3" interpolation="0"/>
-			<key row="120" value="6" interpolation="0"/>
 		</track>
 		<track name="circWidth">
 			<key row="0" value="0" interpolation="2"/>
