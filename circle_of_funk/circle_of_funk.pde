@@ -15,7 +15,7 @@ int rad = 60;        // Widthof the shape
 
 PFont f;
 float angle;
-float offset = -100;
+float offset = -100; 
 
 void setup() 
 {
@@ -212,6 +212,15 @@ void drawScene11() {
   fill(51);
 }
 
+void drawScene12() {
+   background(255, 0, 150,255);
+   xpos = ( float) moonlander.getValue("xpos");
+   ypos = (float) moonlander.getValue("ypos");
+   textAlign(CENTER);
+   text("Music by Leo Sokolovsky", xpos, ypos);
+   fill(51);
+}
+
 void drawLastScene() {
   background(255);
   float xpos = (float) moonlander.getValue("xpos");
@@ -260,7 +269,9 @@ void draw() {
   drawScene10();
 } else if (scene == 11 ) {
   drawScene11();
-} else if (scene > 12) {
+} else if (scene == 12 ) {
+  drawScene12();
+} else if (scene > 13) {
     exit();
 }else{
  println("Unknown scene number: "+scene); 
