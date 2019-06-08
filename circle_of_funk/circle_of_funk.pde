@@ -110,7 +110,7 @@ void drawScene7() {
   float xpos = (float) moonlander.getValue("xpos");
   float ypos = (float) moonlander.getValue("ypos");
   float time = (float) moonlander.getCurrentTime();
-  float beats = time * (140/60);
+  float beats = time * (110/60);
     background(0);
     circle(xpos, ypos, 400);
     fill(255, 0, 150,255);
@@ -124,6 +124,26 @@ void drawScene8() {
   background(255);
   circle(xpos, ypos, 400);
   fill(255, 0, 150,255);
+}
+
+void drawScene9() {
+
+int cols = width*2;
+int rows = height*2;
+
+int[][] myArray = new int[cols][rows];
+
+for (int i = 0; i < cols; i++) {
+  for (int j = 0; j < rows; j++) {
+    myArray[i][j] = int(random(255));
+  }
+}
+for (int i = 0; i < cols; i++) {
+  for (int j = 0; j < rows; j++) {
+    stroke(myArray[i][j]);
+    point(i,j);
+  }
+}
 }
 
 void drawScene6() {
@@ -172,15 +192,15 @@ void draw() {
     write();
   } else if(scene == 7) {
     drawScene7();
-  } else if (scene ==8) {
+  } else if (scene == 8) {
     drawScene8();
-} else if (scene > 9){
-  
+} else if (scene == 9){
+  drawScene9();
 } else if (scene == 5) {
   drawLastScene();
 } else if (scene == 6) {
   drawScene6();
-} else if (scene > 6){
+} else if (scene > 10 ){
 
     exit();
   }else{
