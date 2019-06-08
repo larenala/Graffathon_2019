@@ -39,7 +39,6 @@ void setup()
 
 void drawScene0() {
   background(255);
-  noStroke();
   float xpos = (float) moonlander.getValue("xpos");
   float ypos = (float) moonlander.getValue("ypos"); 
   float circWidth = (float) moonlander.getIntValue("circWidth");
@@ -84,7 +83,7 @@ void drawScene1() {
   }  
 }
 
-void drawScene10 () {
+void drawScene3 () {
   background(255);  
   xpos = (float) moonlander.getValue("xpos");
   ypos = (float) moonlander.getValue("ypos");
@@ -115,17 +114,16 @@ void drawScene4 () {
   float green;
   float blue;
 
-  for(int i=0;i<=20;i++){
+  for(int i=0;i<=200;i++){
     xpos = random(r);
     ypos = random (rr);
-    ellipse(i+xpos, i+ypos, 20, 20);
-    red = random(100, 255);
+    ellipse(i+xpos, i+ypos, 40, 40);
+    red = random(100, 255); 
     green = random(100, 255);
     blue = random(100, 255);
     fill(red, green, blue);
     counter++;
     if(counter > beat){
-      fill(255);
        return;
      }
   }   
@@ -147,15 +145,6 @@ void drawScene2() {
  fill(51);
 }
 
-void drawScene3() {
-  float xpos = (float) moonlander.getValue("xpos");
-  float ypos = (float) moonlander.getValue("ypos");
-  background(255); 
-  textAlign(CENTER);
-  text("funk", xpos, ypos);
- fill(51);
-}
-
 void drawScene6() {
  background(255);
   float time = (float) moonlander.getCurrentTime();
@@ -173,11 +162,17 @@ void drawScene6() {
 }
 
 void drawScene7() {
-  float time = (float) moonlander.getCurrentTime();
+ int counter = 0;
+  
+  background(0);
   float xpos = (float) moonlander.getValue("xpos");
   float ypos = (float) moonlander.getValue("ypos");
+  background(0);
+  circle(xpos, ypos, 400);
+  fill(255, 0, 150,255);
   float circHeight = (float) moonlander.getValue("circHeight");
     background(0);
+    
     circle(xpos, ypos, circHeight);
     fill(255, 0, 150,255);
 
