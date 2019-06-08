@@ -18,6 +18,8 @@ float yspeed = 2.2;  // Speed of the shape
 int xdirection = 1;  // Left or Right
 int ydirection = 1;  // Top to Bottom
 
+PFont f;
+
 void setup() 
 {
   moonlander = Moonlander.initWithSoundtrack(this, "Sokolovsky_Leo_Funk.mp3", 110, 8);
@@ -25,19 +27,25 @@ void setup()
   noStroke();
   frameRate(60);
   ellipseMode(RADIUS);
+  printArray(PFont.list());
+  f = createFont("BungeeShade-Regular.ttf", 224);
+  textFont(f);
   // Set the starting position of the shape
-  xpos = width/2;
-  ypos = height/2;
   moonlander.start();
 }
 
 void drawScene0() {
-  background(51);
+  background(255);
   float xpos = (float) moonlander.getValue("xpos");
   float ypos = (float) moonlander.getValue("ypos"); 
   float circWidth = (float) moonlander.getIntValue("circWidth");
   float circHeight = (float) moonlander.getIntValue("circHeight");
   ellipse(xpos, ypos, circWidth,circHeight);
+  fill(230, 100, 230, 30);
+  ellipse(xpos-500, ypos, circWidth,circHeight);
+  fill(230, 200, 130, 127);
+  ellipse(xpos+500, ypos, circWidth,circHeight);
+  fill(230, 100, 130, 30);
 }
 
 void drawScene1() {
@@ -66,12 +74,22 @@ void drawScene1() {
     fill(red, green, blue);
     counter++;
     if(counter > beat){
+      fill(255);
        return;
      }
   }  
 }
 
 
+void write() {
+ textAlign(CENTER);
+ float c = cos(ane);
+  translate(width/2, height/2);
+  rotate(c);
+ text("FUNK", 0, 0);
+ fill(51);
+ 
+}
 
 
 void draw() 
@@ -96,7 +114,9 @@ void draw()
     drawScene0();
  } else if(scene == 1){
     drawScene1();
-  } else if(scene > 5){
+  } else if(scene == 2) {
+    write();
+  }else if (scene > 5){
     exit();
   }else{
    println("Unknown scene number: "+scene); 
