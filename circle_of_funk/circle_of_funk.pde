@@ -84,16 +84,29 @@ void drawScene1() {
   }  
 }
 
-void drawScene10 () {
-  background(255);  
-  xpos = (float) moonlander.getValue("xpos");
-  ypos = (float) moonlander.getValue("ypos");
+
+void drawScene2() {
+  background(230, 100, 230);
   textAlign(CENTER);
-  text("F", xpos, ypos);
-  text("U", xpos, ypos);
-  text("N", xpos, ypos);
-  text("K", xpos, ypos);
+ if (second() % 2 == 0) {  
+   background(230, 200, 130);
+    offset += 20;
+  } 
+  angle = angle + offset;
+  float c = angle;
   translate(0, 0);
+  rotate(c);
+ textAlign(CENTER);
+ text("FUNK", 0, 0);
+ fill(51);
+}
+
+void drawScene3() {
+  float xpos = (float) moonlander.getValue("xpos");
+  float ypos = (float) moonlander.getValue("ypos");
+  background(255); 
+  textAlign(CENTER);
+  text("funk", xpos, ypos);
  fill(51);
 }
 
@@ -131,30 +144,6 @@ void drawScene4 () {
   }   
 }
 
-void drawScene2() {
-  background(230, 100, 230);
-  textAlign(CENTER);
- if (second() % 2 == 0) {  
-   background(230, 200, 130);
-    offset += 20;
-  } 
-  angle = angle + offset;
-  float c = angle;
-  translate(0, 0);
-  rotate(c);
- textAlign(CENTER);
- text("FUNK", 0, 0);
- fill(51);
-}
-
-void drawScene3() {
-  float xpos = (float) moonlander.getValue("xpos");
-  float ypos = (float) moonlander.getValue("ypos");
-  background(255); 
-  textAlign(CENTER);
-  text("funk", xpos, ypos);
- fill(51);
-}
 
 void drawScene6() {
  background(255);
@@ -202,6 +191,19 @@ void drawScene9() {
   rect(0,0,rectWidth,rectHeight);
   fill(255);
   
+}
+
+void drawScene10 () {
+  background(255);  
+  xpos = (float) moonlander.getValue("xpos");
+  ypos = (float) moonlander.getValue("ypos");
+  textAlign(CENTER);
+  text("F", xpos, ypos);
+  text("U", xpos, ypos);
+  text("N", xpos, ypos);
+  text("K", xpos, ypos);
+  translate(0, 0);
+ fill(51);
 }
  
 
