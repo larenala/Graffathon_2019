@@ -99,7 +99,6 @@ void write() {
  fill(51);
 }
 
-
 void drawScene3() {
   
   int counter = 0;
@@ -128,6 +127,19 @@ void drawScene3() {
   }
 }
 
+void drawLastScene() {
+  background(255);
+  float xpos = (float) moonlander.getValue("xpos");
+  float ypos = (float) moonlander.getValue("ypos"); 
+  float circWidth = (float) moonlander.getIntValue("circWidth");
+  float circHeight = (float) moonlander.getIntValue("circHeight");
+  ellipse(xpos, ypos, circWidth,circHeight);
+  fill(230, 100, 230, 30);
+  ellipse(xpos-500, ypos, circWidth,circHeight);
+  fill(230, 200, 130, 127);
+  ellipse(xpos+500, ypos, circWidth,circHeight);
+  fill(230, 100, 130, 30);
+}
 
 void draw() {
   background(102);
@@ -155,6 +167,8 @@ void draw() {
   } else if(scene == 3) {
     drawScene3();
   
+} else if (scene == 5) {
+  drawLastScene();
 } else if (scene > 5){
     exit();
   }else{
