@@ -39,7 +39,6 @@ void draw()
   float time = (float) moonlander.getCurrentTime();
   translate(width/2, height/2);
   scale(height/1000.0);
-  
   // Update the position of the shape
   //xpos = xpos + ( xspeed * xdirection );
   //ypos = ypos + ( yspeed * ydirection );
@@ -56,28 +55,6 @@ void draw()
 
   // Draw the shape
   ellipse(xpos, ypos, rad, rad);
-  
-  
-  if(scene == 0){
-    drawScene0();
-  }else if(scene == 1){
-    drawScene1();
-  }else if(scene == 2){
-    drawScene2();
-  }else if(scene == 3){
-    drawScene3(); 
-  }else if(scene == 4){
-    drawScene4();
-  }else if(scene == 5){  
-    drawScene5();
-  }else if(scene > 5){
-    exit();
-  }else{
-   println("Unknown scene number: "+scene); 
-  }
-  
-  println("FPS:"+frameRate+" , time:"+time);
-}
   
   
 }
