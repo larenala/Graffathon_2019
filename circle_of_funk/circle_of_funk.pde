@@ -74,6 +74,7 @@ void drawScene1() {
     fill(red, green, blue);
     counter++;
     if(counter > beat){
+      fill(255);
        return;
      }
   }  
