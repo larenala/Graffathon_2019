@@ -99,7 +99,7 @@ void drawScene3 () {
 
 
 void drawScene4 () {
-    background(0);
+    background(255);
   
   xpos = (float) moonlander.getValue("xpos");
   ypos = (float) moonlander.getValue("ypos");
@@ -118,9 +118,9 @@ void drawScene4 () {
     xpos = random(r);
     ypos = random (rr);
     ellipse(i+xpos, i+ypos, 20, 20);
-    red = random(255);
-    green = random(255);
-    blue = random(255);
+    red = random(100, 255);
+    green = random(100, 255);
+    blue = random(100, 255);
     fill(red, green, blue);
     counter++;
     if(counter > beat){
