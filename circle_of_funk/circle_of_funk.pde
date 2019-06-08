@@ -18,14 +18,12 @@ float yspeed = 2.2;  // Speed of the shape
 int xdirection = 1;  // Left or Right
 int ydirection = 1;  // Top to Bottom
 
-float initTimeScene1=0;
-
 void setup() 
 {
   moonlander = Moonlander.initWithSoundtrack(this, "Sokolovsky_Leo_Funk.mp3", 110, 8);
   size(640, 360);
   noStroke();
-  frameRate(30);
+  frameRate(60);
   ellipseMode(RADIUS);
   // Set the starting position of the shape
   xpos = width/2;
@@ -34,18 +32,12 @@ void setup()
 }
 
 void drawScene0() {
-  xpos = (float) moonlander.getValue("xpos");
-  ypos = (float) moonlander.getValue("ypos");
-  
-  if (xpos > width-rad || xpos < rad) {
-    xdirection *= -1;
-  }
-  if (ypos > height-rad || ypos < rad) {
-    ydirection *= -1;
-  }
-
-  // Draw the shape
-  ellipse(xpos, ypos, rad, rad);
+  background(51);
+  float xpos = (float) moonlander.getValue("xpos");
+  float ypos = (float) moonlander.getValue("ypos"); 
+  float circWidth = (float) moonlander.getIntValue("circWidth");
+  float circHeight = (float) moonlander.getIntValue("circHeight");
+  ellipse(xpos, ypos, circWidth,circHeight);
 }
 
 void drawScene1() {
