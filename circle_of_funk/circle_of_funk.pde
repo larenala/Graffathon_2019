@@ -170,22 +170,18 @@ void draw() {
     drawScene1();
   } else if(scene == 2) {
     write();
-<<<<<<< HEAD
   } else if(scene == 7) {
     drawScene7();
   } else if (scene ==8) {
     drawScene8();
 } else if (scene > 9){
-=======
-  } else if(scene == 3) {
-    drawScene3();
   
 } else if (scene == 5) {
   drawLastScene();
 } else if (scene == 6) {
   drawScene6();
 } else if (scene > 6){
->>>>>>> 82029510e625ee349e88272fb9a102b2bdc6aa70
+
     exit();
   }else{
    println("Unknown scene number: "+scene); 
