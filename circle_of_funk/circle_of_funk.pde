@@ -11,7 +11,7 @@ Moonlander moonlander;
 
 float xpos;
 float ypos;
-int rad = 60;        // Widthof the shape
+int rad = 60;        // Width of the shape
 
 PFont f;
 float angle;
@@ -21,7 +21,8 @@ void setup()
 {
   moonlander = Moonlander.initWithSoundtrack(this, "funk_short.mp3", 110, 8);
   noCursor();
-  size(640, 360);
+  //size(640, 360);
+  fullScreen();
   noStroke();
   frameRate(60);
   ellipseMode(RADIUS);
@@ -29,7 +30,6 @@ void setup()
   f = createFont("BungeeShade-Regular.ttf", 224);
   textFont(f);
   textAlign(CENTER, CENTER);
-  // Set the starting position of the shape
   moonlander.start();
 }
 
@@ -245,7 +245,6 @@ void draw() {
   float time = (float) moonlander.getCurrentTime();
   translate(width/2, height/2);
   scale(height/1000.0);
-  
   
   int scene = moonlander.getIntValue("scene");
   
