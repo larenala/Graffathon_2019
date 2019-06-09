@@ -162,7 +162,7 @@ void drawScene7() {
   float xpos = (float) moonlander.getValue("xpos");
   float ypos = (float) moonlander.getValue("ypos");
   float circHeight = (float) moonlander.getValue("circHeight");
-    background(80);
+    background(255);
     circle(xpos, ypos, circHeight);
     // 255, 0, 150,255
     fill(230, 100, 230);
@@ -170,17 +170,17 @@ void drawScene7() {
 }
 
 void drawScene8() {
+  background(255);
   float xpos = (float) moonlander.getValue("xpos");
   float ypos = (float) moonlander.getValue("ypos");
   float circHeight = (float) moonlander.getValue("circHeight");
-  background(100); 
+  background(255);
   circle(xpos, ypos, circHeight);
   fill(230, 100, 230);
 }
 
 void drawScene9() {
-
-  background(0);
+  background(216, 200, 151);
   float rectWidth = (float) moonlander.getIntValue("rectWidth");
   float rectHeight = (float) moonlander.getIntValue("rectHeight");
   rectMode(CENTER);
@@ -276,6 +276,7 @@ void draw() {
 } else if (scene == 12 ) {
   drawScene12();
 } else if (scene > 13) {
+  background(200);
     exit();
 }else{
  println("Unknown scene number: "+scene); 
