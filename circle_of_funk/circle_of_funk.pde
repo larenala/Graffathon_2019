@@ -20,9 +20,9 @@ float offset = -100;
 void setup() 
 {
   moonlander = Moonlander.initWithSoundtrack(this, "funk_short.mp3", 110, 8);
+  noCursor();
   size(640, 360);
   noStroke();
-  noCursor();
   frameRate(60);
   ellipseMode(RADIUS);
   printArray(PFont.list());
@@ -157,27 +157,30 @@ void drawScene6() {
 }
 
 void drawScene7() {
+  
   float time = (float) moonlander.getCurrentTime();
   float xpos = (float) moonlander.getValue("xpos");
   float ypos = (float) moonlander.getValue("ypos");
   float circHeight = (float) moonlander.getValue("circHeight");
-    background(0);
+    background(255);
     circle(xpos, ypos, circHeight);
-    fill(255, 0, 150,255);
+    // 255, 0, 150,255
+    fill(230, 100, 230);
 
 }
 
 void drawScene8() {
+  background(255);
   float xpos = (float) moonlander.getValue("xpos");
   float ypos = (float) moonlander.getValue("ypos");
   float circHeight = (float) moonlander.getValue("circHeight");
   background(255);
   circle(xpos, ypos, circHeight);
-  fill(255, 0, 150,255);
+  fill(230, 100, 230);
 }
 
 void drawScene9() {
-  background(0);
+  background(216, 200, 151);
   float rectWidth = (float) moonlander.getIntValue("rectWidth");
   float rectHeight = (float) moonlander.getIntValue("rectHeight");
   rectMode(CENTER);
@@ -213,10 +216,11 @@ void drawScene11() {
 }
 
 void drawScene12() {
-   background(255, 0, 150,255);
+   background(230, 100, 230);
    xpos = ( float) moonlander.getValue("xpos");
    ypos = (float) moonlander.getValue("ypos");
    textAlign(CENTER);
+   textSize(160);
    text("Music by Leo Sokolovsky", xpos, ypos);
    fill(51);
 }

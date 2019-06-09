@@ -135,8 +135,9 @@
 			<key row="722" value="300" interpolation="2"/>
 			<key row="727" value="-300" interpolation="1"/>
 			<key row="732" value="-300" interpolation="2"/>
-			<key row="737" value="300" interpolation="0"/>
-			<key row="752" value="0" interpolation="0"/>
+			<key row="737" value="300" interpolation="1"/>
+			<key row="752" value="-300" interpolation="2"/>
+			<key row="768" value="0" interpolation="0"/>
 			<key row="952" value="0" interpolation="0"/>
 			<key row="1040" value="0" interpolation="0"/>
 		</track>
@@ -177,6 +178,7 @@
 			<key row="904" value="0" interpolation="0"/>
 			<key row="952" value="12" interpolation="0"/>
 			<key row="1040" value="8" interpolation="0"/>
+			<key row="1064" value="13" interpolation="0"/>
 		</track>
 		<track name="rectHeight">
 			<key row="240" value="100" interpolation="0"/>
@@ -258,9 +260,11 @@
 			<key row="864" value="200" interpolation="1"/>
 			<key row="880" value="0" interpolation="1"/>
 			<key row="896" value="2000" interpolation="1"/>
+			<key row="904" value="10" interpolation="2"/>
+			<key row="920" value="2000" interpolation="0"/>
 			<key row="1040" value="2000" interpolation="2"/>
 			<key row="1056" value="1000" interpolation="3"/>
-			<key row="1072" value="0" interpolation="0"/>
+			<key row="1063" value="0" interpolation="0"/>
 		</track>
 		<track name="circWidth">
 			<key row="18" value="0" interpolation="2"/>
@@ -321,6 +325,9 @@
 			<key row="452" value="10" interpolation="0"/>
 			<key row="454" value="0" interpolation="0"/>
 			<key row="581" value="100" interpolation="0"/>
+			<key row="924" value="200" interpolation="1"/>
+			<key row="928" value="0" interpolation="2"/>
+			<key row="944" value="2000" interpolation="0"/>
 		</track>
 		<track name="rotation">
 			<key row="240" value="5" interpolation="0"/>
